@@ -6,14 +6,13 @@ We will be using the Eth Docker (One of the projects recommended from the Ethere
 Step 1:
 Please create the instance/cloud in your preferred cloud platform.
 
-
 Step 2:
-Download eth docker from github.
-cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker
+Download eth docker from github. <br/>
+cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker <br/>
 
-If you don’t have git install, please install it with the following command.
-sudo apt-get update
-sudo apt-get install git-all
+If you don’t have git install, please install it with the following command. <br/>
+sudo apt-get update <br/>
+sudo apt-get install git-all <br/>
 
 Step 3: 
 Please make sure you are inside “eth-docker” directory and run the following command to install all the required library/package.
