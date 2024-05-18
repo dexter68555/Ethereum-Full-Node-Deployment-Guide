@@ -33,7 +33,7 @@ Please select Ethereum RPC node. (Execution client + Consensus client)
 In this guide, we will use Prysm client as the Consensus client so please select Prysm as the Consensus client.
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/f3433c2b-559e-4152-9e7b-ef444780df19)
 
-In this guide, we will use Netheremind client as the Execution client so please select Nethermind as the Execution client.
+In this guide, we will use Netheremind client as the Execution client so please select Nethermind as the Execution client. <br/>
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/86273d54-0343-4378-9e95-4e688170a44c)
 
 Feel free to use the recommended value for the CL Checkpoint Sync URL.
