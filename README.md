@@ -7,7 +7,7 @@ Step 1:
 Please create the instance/cloud in your preferred cloud platform.
 
 Step 2:
-Download eth docker from github. <br/>
+Download eth docker from github by running the following command. <br/>
 cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker <br/>
 
 If you don’t have git install, please install it with the following command. <br/>
@@ -15,14 +15,14 @@ sudo apt-get update <br/>
 sudo apt-get install git-all <br/>
 
 Step 3: 
-Please make sure you are inside “eth-docker” directory and run the following command to install all the required library/package.
-./ethd install
+Please make sure you are inside “eth-docker” directory and run the following command to install all the required library/package. <br/>
+./ethd install <br/>
 
 Please answer yes when being prompt during the installation. 
 
 Step 4:
-Please configure the eth-docker by running the following command. In this guide, we will setup the Ethereum Holesky Testnet RPC full node with Nethermind client and Prysm client. 
-./ethd config
+Please configure the eth-docker by running the following command. In this guide, we will setup the Ethereum Holesky Testnet RPC full node with Nethermind client and Prysm client. <br/>
+./ethd config <br/>
 
 Please select Holesky testnet. 
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/df9e8a88-9b3c-4063-96b6-c5c8d35d17db)
@@ -40,7 +40,7 @@ Feel free to use the recommended value for the CL Checkpoint Sync URL.
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/863c17ba-ee09-4b7e-9565-db7260a795b3)
 
 Feel free to select “Yes” for MEV Boost and use the recommended value for MEV Relay.
-![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/3406fd24-944c-4638-ad29-e723c1bd0914)
+![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/3406fd24-944c-4638-ad29-e723c1bd0914) <br/>
 
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/2530e144-026a-4c2d-9647-b88e4adb72de)
 
@@ -56,13 +56,13 @@ Please note that we are deploying a full node. The default configuration of the 
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/85d4d156-e43f-4ba4-8064-c7a49c31aaee)
 
 Step 5:
-We need to expose port. Please run the following command to edit the configuration.
-vi .env
+We need to expose port. Please run the following command to edit the configuration. <br/>
+vi .env <br/>
 
 Look for the COMPOSE_FILE variable of the .env file and append ":el-shared.yml:cl-shared.yml". After that, press escape button and type ":wq" to save the changes.
 
 Step 6:
-Please make sure you are inside “eth-docker” directory and run the following command to start your RPC node with Nethermind Client (Execution client) and Nimbus Client (Consensus client).
-./ethd up
+Please make sure you are inside “eth-docker” directory and run the following command to start your RPC node with Nethermind Client (Execution client) and Nimbus Client (Consensus client). <br/>
+./ethd up <br/>
 
 It will take some time for the node to be fully synchronized. You can check the sync status by running the “eth_blockNumber” method to get the latest block number and cross check it with Etherscan latest block number. 
