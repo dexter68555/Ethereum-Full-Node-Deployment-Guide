@@ -1,7 +1,7 @@
 # Ethereum-Full-Node-Deployment-Guide
-This is a guide on deploying Ethereum Full node (Execution Client and Consensus Client)
+This is a guide on deploying Ethereum Full node (Execution Client and Consensus Client). <br/>
 
-We will be using the Eth Docker (One of the projects recommended from the Ethereum Official Web Site) in this guide. (https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/)
+We will be using the Eth Docker (One of the projects recommended from the Ethereum Official Web Site) in this guide. (https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) <br/>
 
 Step 1:
 Please create the instance/cloud in your preferred cloud platform.
