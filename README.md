@@ -3,10 +3,10 @@ This is a guide on deploying Ethereum Full node (Execution Client and Consensus 
 
 We will be using the Eth Docker (One of the projects recommended from the Ethereum Official Web Site) in this guide. (https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) <br/>
 
-Step 1:
+Step 1: <br/>
 Please create the instance/cloud in your preferred cloud platform.
 
-Step 2:
+Step 2: <br/>
 Download eth docker from github by running the following command. <br/>
 cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker <br/>
 
@@ -14,13 +14,13 @@ If you don’t have git install, please install it with the following command. <
 sudo apt-get update <br/>
 sudo apt-get install git-all <br/>
 
-Step 3: 
+Step 3: <br/>
 Please make sure you are inside “eth-docker” directory and run the following command to install all the required library/package. <br/>
 ./ethd install <br/>
 
 Please answer yes when being prompt during the installation. 
 
-Step 4:
+Step 4: <br/>
 Please configure the eth-docker by running the following command. In this guide, we will setup the Ethereum Holesky Testnet RPC full node with Nethermind client and Prysm client. <br/>
 ./ethd config <br/>
 
@@ -55,13 +55,13 @@ That's all for configuration. It will take a while to finish so please wait for 
 Please note that we are deploying a full node. The default configuration of the eth docker is for full node. If you are not sure, please check the .env file by running “cat .env” and look for “ARCHIVE NODE”. It should be configured as false. 
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/85d4d156-e43f-4ba4-8064-c7a49c31aaee)
 
-Step 5:
+Step 5: <br/>
 We need to expose port. Please run the following command to edit the configuration. <br/>
 vi .env <br/>
 
 Look for the COMPOSE_FILE variable of the .env file and append ":el-shared.yml:cl-shared.yml". After that, press escape button and type ":wq" to save the changes.
 
-Step 6:
+Step 6: <br/>
 Please make sure you are inside “eth-docker” directory and run the following command to start your RPC node with Nethermind Client (Execution client) and Nimbus Client (Consensus client). <br/>
 ./ethd up <br/>
 
