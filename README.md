@@ -32,7 +32,7 @@ Please configure the eth-docker by running the following command. In this guide,
 ./ethd config
 ```
 
-Please select Holesky testnet. 
+Please select Holesky testnet. <br/>
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/df9e8a88-9b3c-4063-96b6-c5c8d35d17db)
 
 Please select Ethereum RPC node. (Execution client + Consensus client)
