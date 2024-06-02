@@ -8,21 +8,29 @@ Please create the instance/cloud in your preferred cloud platform.
 
 Step 2: <br/>
 Download eth docker from github by running the following command. <br/>
-cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker <br/>
+```sh
+cd ~ && git clone https://github.com/eth-educators/eth-docker.git && cd eth-docker
+```
 
 If you don’t have git install, please install it with the following command. <br/>
-sudo apt-get update <br/>
-sudo apt-get install git-all <br/>
+```sh
+sudo apt-get update
+sudo apt-get install git-all
+```
 
 Step 3: <br/>
 Please make sure you are inside “eth-docker” directory and run the following command to install all the required library/package. <br/>
-./ethd install <br/>
+```sh
+./ethd install
+```
 
 Please answer yes when being prompt during the installation. 
 
 Step 4: <br/>
 Please configure the eth-docker by running the following command. In this guide, we will setup the Ethereum Holesky Testnet RPC full node with Nethermind client and Prysm client. <br/>
-./ethd config <br/>
+```sh
+./ethd config
+```
 
 Please select Holesky testnet. 
 ![image](https://github.com/dexter68555/Ethereum-Full-Node-Deployment-Guide/assets/46341564/df9e8a88-9b3c-4063-96b6-c5c8d35d17db)
@@ -57,12 +65,16 @@ Please note that we are deploying a full node. The default configuration of the 
 
 Step 5: <br/>
 We need to expose port. Please run the following command to edit the configuration. <br/>
-vi .env <br/>
+```sh
+vi .env
+```
 
 Look for the COMPOSE_FILE variable of the .env file and append ":el-shared.yml:cl-shared.yml". After that, press escape button and type ":wq" to save the changes.
 
 Step 6: <br/>
 Please make sure you are inside “eth-docker” directory and run the following command to start your RPC node with Nethermind Client (Execution client) and Nimbus Client (Consensus client). <br/>
-./ethd up <br/>
+```sh
+./ethd up
+```
 
 It will take some time for the node to be fully synchronized. You can check the sync status by running the “eth_blockNumber” method to get the latest block number and cross check it with Etherscan latest block number. 
